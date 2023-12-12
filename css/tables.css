@@ -1,0 +1,47 @@
+table {
+    border:1px solid #000;
+    width:80%;
+    border-collapse: collapse;
+    margin:auto;
+    background-color:#fff;
+}
+
+tr {
+  vertical-align:middle;
+}
+
+td,th {
+  border:1px dotted #000;
+  padding:.5em;
+}
+
+table.client {
+    margin:40px auto; /* T R B L */
+}
+
+table.client tr:nth-child(odd) {
+    background-color:#eee;
+}
+
+
+table.client th {
+    text-align: center;
+    width:30%;
+    background-color: #FCC777;
+}
+
+
+table.audience th {
+    margin:40px auto; /* T R B L */
+    background-color: #FCC777;
+}
+
+
+table.audience th{
+    width:33.3%;
+}
+
+table.audience td:first-child{
+    text-align: center;
+    font-weight: bold;
+}
