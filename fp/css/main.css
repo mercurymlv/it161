@@ -1,0 +1,331 @@
+/* Global rules */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Spectral');
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Itim');
+
+
+html {
+    background-color: black;
+    color: linen;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    background-image: url("../images/old-wood.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 2000px 1200px;
+}
+
+
+body{
+    margin:0; /* removes gap at top of page */
+}
+
+::selection {
+    color: #000; 
+    background: lightcyan;
+}
+
+.eventsbox {
+    background-color: rgba(0,0,0,.6);
+    color: linen;
+    padding: 50px;
+    margin: 20px;
+    width:60%;
+}
+
+
+ main.wrapper {
+    background-color: white;
+    background-image: url(../images/bar-background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+
+ }
+ 
+
+p {
+    margin: 1em; /* Top Right Bottom Left (TRBL) */
+}
+
+
+
+/* Start header elements formatting */
+h1 {
+    font-weight: normal;
+    margin: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    color: white;
+    line-height: 1em;
+    font-family: 'Vina Sans',serif;
+    font-size: 4em;
+}
+
+h2,h3 {
+    font-family: 'Itim',sans-serif;
+    color: azure;
+    font-weight:bold;
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1em;
+    margin-bottom: 0px;
+}
+/* End header elements formatting */
+
+
+
+a {
+    color:lightskyblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+    background-color: darkred;
+    text-decoration: none;
+}
+
+
+.italicized {
+    font-style: italic;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+
+
+footer {
+    clear: both;
+    background-color: black;
+    opacity: .75;
+    text-align: center;
+    padding: 1em;
+}
+
+.zero-bottom {
+    margin-bottom: 0px;
+}
+.zero-top {
+    margin-top: 0px;
+}
+
+.half-top {
+    margin-top: .5em;
+}
+
+.half-top-zero-bottom{
+    margin-top: .5em;
+    margin-bottom: 0px;
+}
+
+.half-top-double-bottom{
+    margin-top: .5em;
+    margin-bottom: 2em;    
+}
+
+.center-vert {
+
+}
+
+
+
+
+
+
+/* start positioning styles */
+
+/* Allows box to take up full space, ignoring padding/margin */
+* {
+    box-sizing: border-box;
+  }
+  
+ /* Create columns that floats next to each other on the top */
+
+.banner-row {
+    background-color: rgba(0,0,0,.75);
+    display: flex;
+    align-items: center;
+
+}
+
+.banner-column-logo {
+    color: linen;
+    line-height: 1em;
+    float: left;
+    width: 25%;
+    padding: 0px;
+  }
+
+.banner-column {
+    color: linen;
+    line-height: 1em;
+    float: left;
+    width: 33.3%;
+    padding: 0px;
+  }
+   /* Clear floats after the columns */
+.banner-row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+
+
+.pagenav-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+ .pagenav-column {
+    line-height: 1em;
+    padding: 0px;
+    width: 50%;
+  }
+
+   /* Clear floats after the columns */
+  .pagenav-row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+
+
+
+/* flexible image rules start here */
+  
+ .flexible{
+    display: flex;
+    justify-content: space-evenly;
+ }
+  
+ /* flexible image rules end here */
+ 
+
+
+/* Social Media Icons */
+ .fa {
+    padding: 10px;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
+  }
+   .fa:hover {
+      opacity: 0.7;
+  }
+   .fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding: 10px 12px;
+  }
+   .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+   .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+   .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+   .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+
+  .social-container {
+    display: flex;
+    justify-content:right;
+    padding: 0px 10px 0px;
+  }
+ /* END Social Media Icons */
+
+
+
+.text-align-center{
+    text-align:center;
+    background-color:aqua;
+ }
+ 
+ 
+ .margin-auto > div{
+    margin:auto;
+    width:50%;
+    background-color:beige;
+    text-align:center;
+ }
+ 
+
+
+/* end positioning styles */
+
+
+
+
+
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    main.wrapper {
+        width: 75%;
+        margin: auto;
+    }
+    
+
+    .banner-row {
+        width: 75%;
+        margin: auto;
+    }
+
+    
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    main.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+
+    .banner-row {
+        width: 90%;
+        margin: auto;
+    }
+
+    .banner-column {
+        width: 100%;
+    }
+    
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    main.wrapper {
+        width: 100%;
+    }
+    .banner-row {
+        width: 100%;
+    }
+
+    .banner-column {
+        width: 100%;
+    }
+
+}
