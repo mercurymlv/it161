@@ -152,26 +152,34 @@ footer {
 
 .banner-row {
     background-color: rgba(0,0,0,.75);
+    color: linen;
     display: flex;
     align-items: center;
+    line-height: 1em;
 
 }
 
-.banner-column-logo {
-    color: linen;
-    line-height: 1em;
+.banner-column-logo {   
     float: left;
-    width: 25%;
+    display: flex;
+    width: 20%;
     padding: 0px;
-  }
+    align-items: center;
+    justify-content: center;
+}
 
 .banner-column {
-    color: linen;
-    line-height: 1em;
     float: left;
-    width: 33.3%;
+    width: 40%;
     padding: 0px;
-  }
+}
+.banner-column-right {
+    float: left;
+    width: 40%;
+    line-height: 1.5em;
+    padding: 10px;
+}
+
    /* Clear floats after the columns */
 .banner-row:after {
     content: "";
@@ -313,6 +321,13 @@ footer {
         width: 100%;
     }
     
+    .banner-column-logo {
+        width: 100%;
+    }
+    .banner-column-right {
+        width: 100%;
+    }
+
 }
 
 /* PHONE */
@@ -327,5 +342,10 @@ footer {
     .banner-column {
         width: 100%;
     }
-
+    .banner-column-logo {
+        width: 100%;
+    }    
+    .banner-column-right {
+        width: 100%;
+    }
 }

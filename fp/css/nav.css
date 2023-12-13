@@ -81,6 +81,14 @@
         float: none;
         text-align: center;
     }
+    .banner-column-logo {
+        float: none;
+        text-align: center;
+    }
+    .banner-column-right {
+        float: none;
+        text-align: center;
+    }
 
     .eventsbox {
         width: auto;
