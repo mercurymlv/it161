@@ -27,13 +27,30 @@ body{
     background: lightcyan;
 }
 
+
+.container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
 .eventsbox {
     background-color: rgba(0,0,0,.6);
     color: linen;
-    padding: 50px;
+    padding: 5px;
     margin: 20px;
-    width:60%;
+    width: 60%;
 }
+
+.asidebox {
+    background-color: rgba(0,0,0,.6);
+    color: linen;
+    padding: 5px;
+    margin: 20px;
+    width: 30%;
+    float: left;
+}
+
 
 
  main.wrapper {
@@ -74,12 +91,20 @@ h2,h3 {
     text-transform: uppercase;
 }
 
-h3 {
-    font-size: 1em;
-    margin-bottom: 0px;
-}
-/* End header elements formatting */
 
+.articleimg {
+    float: left;
+    width: 60%;
+    height: auto;
+    margin: 10px;
+}
+
+.asideimg {
+    /* float: left; */
+    width: 95   %;
+    height: auto;
+    /* margin: 10px; */
+}
 
 
 a {
@@ -111,37 +136,9 @@ footer {
     padding: 1em;
 }
 
-.zero-bottom {
-    margin-bottom: 0px;
-}
-.zero-top {
-    margin-top: 0px;
-}
-
-.half-top {
-    margin-top: .5em;
-}
-
-.half-top-zero-bottom{
-    margin-top: .5em;
-    margin-bottom: 0px;
-}
-
-.half-top-double-bottom{
-    margin-top: .5em;
-    margin-bottom: 2em;    
-}
-
-.center-vert {
-
-}
 
 
-
-
-
-
-/* start positioning styles */
+/* start positioning styles */  
 
 /* Allows box to take up full space, ignoring padding/margin */
 * {
@@ -160,22 +157,28 @@ footer {
 }
 
 .banner-column-logo {   
-    float: left;
+    /* float: left; */
     display: flex;
-    width: 20%;
+    /* width: 20%; */
     padding: 0px;
     align-items: center;
     justify-content: center;
 }
 
+.banner-column-logo a {
+    display: inline-block;
+    text-align: center;
+}
+
+
 .banner-column {
-    float: left;
-    width: 40%;
+    /* float: left; */
+    /* width: 40%; */
     padding: 0px;
 }
 .banner-column-right {
-    float: left;
-    width: 40%;
+    /* float: left; */
+    /* width: 40%; */
     line-height: 1.5em;
     padding: 10px;
 }
@@ -328,6 +331,10 @@ footer {
         width: 100%;
     }
 
+    .articleimg {
+        width: 100%;
+        margin: 0px 0px 10px;
+    }
 }
 
 /* PHONE */
@@ -347,5 +354,9 @@ footer {
     }    
     .banner-column-right {
         width: 100%;
+    }
+    .articleimg {
+        width: 100%;
+        margin: 0px 0px 10px;
     }
 }
