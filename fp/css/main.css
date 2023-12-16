@@ -38,7 +38,7 @@ body{
     background-color: rgba(0,0,0,.6);
     color: linen;
     padding: 5px;
-    margin: 0px0;
+    margin: 0px;
     margin-left: 20px;
     width: 65%;
 }
@@ -119,7 +119,7 @@ h2,h3 {
 
 .asideimg {
     /* float: left; */
-    width: 95   %;
+    width: 95%;
     height: auto;
     /* margin: 10px; */
 }
@@ -385,7 +385,14 @@ footer {
     .banner-column-right {
         width: 100%;
     }
-
+    .eventsbox{
+        width: 100%;
+        margin: 0px;
+    }
+    .asidebox{
+        width: 100%;
+        margin: 0px;
+    }
     .articleimg {
         width: 100%;
         margin: 0px 0px 10px;
@@ -417,6 +424,14 @@ footer {
     }    
     .banner-column-right {
         width: 100%;
+    }
+    .eventsbox{
+        width: 100%;
+        margin: 0px;
+    }
+    .asidebox{
+        width: 100%;
+        margin: 0px;
     }
     .articleimg {
         width: 100%;
