@@ -38,19 +38,37 @@ body{
     background-color: rgba(0,0,0,.6);
     color: linen;
     padding: 5px;
-    margin: 20px;
-    width: 60%;
+    margin: 0px0;
+    margin-left: 20px;
+    width: 65%;
 }
 
 .asidebox {
     background-color: rgba(0,0,0,.6);
     color: linen;
-    padding: 5px;
-    margin: 20px;
+    padding: 20px 5px;
+    margin: 0px;
+    margin-right: 20px;
     width: 30%;
     float: left;
+    text-align: center;
+    
 }
 
+
+.imgbox {
+    background-color: rgba(0,0,0,.6);
+    color: linen;
+    padding: 5px;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.imgbox img {
+    margin: 10px;
+    border: 2px solid linen;
+}
 
 
  main.wrapper {
@@ -127,6 +145,11 @@ a:hover {
     font-weight: bold;
   }
 
+  .bold-space {
+    font-weight: bold;
+    margin: 20px;
+  }
+
 
 footer {
     clear: both;
@@ -136,6 +159,38 @@ footer {
     padding: 1em;
 }
 
+
+.hours {
+    margin-left: 50px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.hours th {
+    text-align: right;
+    padding: 5px;
+}
+
+.hours td {
+    text-align: left ;
+    padding: 5px;
+}
+
+
+.spacebefore {
+    margin-top: 50px;
+}
+
+.center {
+    text-align: center;
+}
+
+.imap {
+    width: 600px;
+    height: 400px;
+    border: 0;
+
+}
 
 
 /* start positioning styles */  
@@ -264,6 +319,9 @@ footer {
     justify-content:right;
     padding: 0px 10px 0px;
   }
+
+
+
  /* END Social Media Icons */
 
 
@@ -284,9 +342,6 @@ footer {
 
 
 /* end positioning styles */
-
-
-
 
 
 
@@ -335,6 +390,14 @@ footer {
         width: 100%;
         margin: 0px 0px 10px;
     }
+    .imap {
+        width: 100%;
+        height: auto;
+    }
+    .imgbox img{
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* PHONE */
@@ -358,5 +421,13 @@ footer {
     .articleimg {
         width: 100%;
         margin: 0px 0px 10px;
+    }
+    .imap {
+        width: 100%;
+        height: auto;
+    }
+    .imgbox img{
+        width: 100%;
+        height: auto;
     }
 }
